@@ -9,9 +9,8 @@
 #include <stdio.h>
 
 int main() {
-   int t;
-   scanf("%d",&t);
-   if (t>60)
-     printf("Fire situation");
-  return 0;
+    int t;
+    scanf("%d",&t);
+    t>60 && printf("Fire situation!!!\nPlease visite: https://www.youtube.com/watch?v=SeOaGMsIsjo\n");
+    return 0;
 }
