@@ -9,22 +9,30 @@
 
 #include <stdio.h>
 
+#include <stdio.h>
+
 int main() {
     int a,b,c,middle;
     int max,min=0;
     scanf("%d %d %d",&a,&b,&c);
-    if (a>=b && a>=c)
+    if (a>=b && a>=c) {
       max=a;
-        if ((b>a || b==a) && (b>c || b==c)) 
+    } else {
+        if (b>=a && b>=c) {
           max=b;
-            if(max==0)
-              max=c;
-    if (b<=a && b<=c)
+        } else {
+          max=c;
+        }    
+    }    
+    if (b<=a && b<=c) {
       min=b;
-        if (a<=b && a<=c)
+    } else {
+        if (a<=b && a<=c){
           min=a;
-            if(min==0)
-              min=c;
+        } else {
+          min=c;
+        }
+    }
     middle=(a+b+c)-(min+max);
     printf("%d %d %d",min,middle,max);
     return 0;
