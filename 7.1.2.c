@@ -12,16 +12,17 @@
 int main() {
     int k,m;
     scanf ("%d %d",&k,&m);
-    if (m<=0) }
-      printf("");  
+    if (m<=0) {
+        printf("");  
     } else {
         if (k<0){
-          for (int i = 1; i!=m+1; i+=1)
-            printf("%d ",i); 
+            for (int i = 1; i!=m+1; i+=1)
+                printf("%d ",i); 
         } else {
-          for (int i = k; i!=m+1; i+=1){
-            printf("%d ",i);  
-        }    
-    }               
-    } return 0;
+            for (int i = k; i!=m+1; i+=1){
+                printf("%d ",i);  
+            }    
+        }   
+    }            
+    return 0;
 }
