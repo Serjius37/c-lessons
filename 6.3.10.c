@@ -13,24 +13,23 @@ int main() {
     int a,b,c,middle;
     int max,min=0;
     scanf("%d %d %d",&a,&b,&c);
+    
     if (a>=b && a>=c) {
         max=a;
+    }else if (b>=a && b>=c) {
+        max=b;
     } else {
-        if (b>=a && b>=c) {
-            max=b;
-        } else {
-            max=c;
-        }    
+        max=c;
     }    
+   
     if (b<=a && b<=c) {
-      min=b;
+        min=b;
+    } else if (a<=b && a<=c){
+        min=a;
     } else {
-        if (a<=b && a<=c){
-            min=a;
-        } else {
-            min=c;
-        }
+        min=c;
     }
+
     middle=(a+b+c)-(min+max);
     printf("%d %d %d",min,middle,max);
     return 0;
