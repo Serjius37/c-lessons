@@ -7,12 +7,15 @@
 
 #include <stdio.h>
 
-    int main() {
-    int control;
+int main() {
+int control = 0;
 
-    while(control != -9999){
-        scanf("%d", &control);
-        printf("%d ", control);
-    }
-    return 0;
+        while (control != -9999) {
+                scanf("%d", &control);
+                printf("%d ", control);
+        }
+
+
+
+ return 0;
 }
