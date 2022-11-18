@@ -9,15 +9,12 @@
 
 #include <stdio.h>
 
-int main(void) {
-
-        int N = 0;
-
-        scanf("%d", &N);
-
-        for (int i = 1; (i*i) <= N; i+=1){
-                printf("%d ",i*i);   
-        }
-
-return 0;
+int main(void) 
+{
+    int N = 0;
+    scanf("%d", &N);
+    for (int i = 1; (i*i) <= N; i+=1) {
+        printf("%d ",i*i);   
+    }
+    return 0;
 }

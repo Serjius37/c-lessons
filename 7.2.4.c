@@ -9,14 +9,14 @@
 
 #include <stdio.h>
 
-int main() {
-        int control=1, total=0;
-    
-        while(control != 0){
-                scanf("%d", &control);
+int main() 
+{
+    int control=1, total=0;
+    while(control != 0) {
+        scanf("%d", &control);
         if (control != 0) 
-                total+=control;
-        }
-        printf("%d", total);    
-return 0;
+            total+=control;
+    }
+    printf("%d", total);    
+    return 0;
 }

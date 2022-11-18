@@ -9,21 +9,19 @@
 
 #include <stdio.h>
 
-int main() {
-        int control=1,min=9999, max=-9999;
-    
+int main() 
+{
+    int control=1,min=9999, max=-9999;
+    scanf("%d", &control);
+    while(control != 0) {
+        if (min > control) {
+        min = control;
+        }      
+        if (max < control) {
+            max = control;
+        } 
         scanf("%d", &control);
-    
-        while(control != 0){
-                if (min > control){
-                            min = control;
-                }      
-                if (max < control){
-                            max = control;
-                } 
-                scanf("%d", &control);
-        }    
-
-        printf("%d %d", max, min);    
-return 0;
+    }    
+    printf("%d %d", max, min);    
+    return 0;
 }

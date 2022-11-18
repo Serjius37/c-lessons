@@ -9,13 +9,13 @@
 
 #include <stdio.h>
 
-int main() {
-        int control;
-
-        while(control != -9999){
-                scanf("%d", &control);
+int main() 
+{
+    int control;
+    while(control != -9999) {
+        scanf("%d", &control);
         if (control != -9999) 
-                printf("%d ", control);
-        }
-return 0;
+            printf("%d ", control);
+    }
+    return 0;
 }
