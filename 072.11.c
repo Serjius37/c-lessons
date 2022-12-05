@@ -1,28 +1,24 @@
-/* Перевёртыш
-Напишите программу, которая по данному натуральному NN печатает его цифры в обратном порядке.
+/*Дано натуральное число NN. Найти наименьшее натуральное число rr, такое, что 2r≥N2r≥N.
 Входные данные:
 Одно натуральное число NN.
 Выходные данные:
-Цифры числа NN, записанные в обратном порядке. 
+Число rr. 
 */
 
 #include <stdio.h>
 
 int main() {
-int control,v,r;
-int total=1;
+double control;
+int total=0,r=1;
     
-scanf("%d", &control);
-v=control;
-while(control > 9){
-    control/=10;
+scanf("%lf", &control);
+while(control > 1){
+    control=control/2;
     total+=1;
-} 
-for (int i = 1; i != total; i+=1){    
-    r=v%10;
-    v=v/10;
-    printf("%d", r); 
-}
-    printf("%d", v); 
+}    
+for (int i = 1; i != total+1; i+=1)      
+    r=i;
+    
+printf("%d ", r);    
 return 0;
 }

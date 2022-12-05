@@ -1,24 +1,23 @@
-/*Дано натуральное число NN. Найти наименьшее натуральное число rr, такое, что 2r≥N2r≥N.
+/*Степени двойки
+По заданному NN вывести через пробел все (натуральные, т.е. 1,2,3,…1,2,3,… ) степени числа 22, для которых 2k≤N2k≤N.
 Входные данные:
-Одно натуральное число NN.
+Целое натуральное число NN, причем N<30000N<30000.
 Выходные данные:
-Число rr. 
+Натуральные числа от 11 до pp, такие, что если посчитать 2k2k, то получится число не превосходящее NN.
 */
 
 #include <stdio.h>
 
 int main() {
-double control;
-int total=0,r=1;
+int control;
+int total=0;
     
-scanf("%lf", &control);
-while(control > 1){
-    control=control/2;
+scanf("%d", &control);
+while(control != 1){
+    control/=2;
     total+=1;
 }    
-for (int i = 1; i != total+1; i+=1)      
-    r=i;
-    
-printf("%d ", r);    
+for (int i = 1; i != total+1; i+=1)    
+    printf("%d ", i);    
 return 0;
 }
