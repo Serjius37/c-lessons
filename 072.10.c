@@ -10,14 +10,14 @@
 
 int main() {
 int control;
-int total=0;
+int total = 0;
     
 scanf("%d", &control);
-while(control != 1){
-    control/=2;
-    total+=1;
+while(control != 1) {
+    control /= 2;
+    total += 1;
 }    
-for (int i = 1; i != total+1; i+=1)    
+for (int i = 1; i != total + 1; i += 1)    
     printf("%d ", i);    
 return 0;
 }

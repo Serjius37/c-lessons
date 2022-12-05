@@ -9,7 +9,7 @@
 #include <stdio.h>
 
 int main() {
-    int f = 0, a = -1, c = -32768, w = 1,d = 0;
+    int f = 0, a = -1, c = -32768, w = 1, d = 0;
     for (; a!= -9999;) {
         scanf ("%d", &a);
         if (a == -9999) break;
@@ -17,12 +17,12 @@ int main() {
             f += 1;
             w = d;
         }
-        c=a;
+        c = a;
         d += 1;
     }        
     
      if (f) {
-        printf ("%d",w+1);
+        printf ("%d",w + 1);
      } else { 
         printf("0");
     }    

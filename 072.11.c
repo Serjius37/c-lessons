@@ -9,15 +9,15 @@
 
 int main() {
 double control;
-int total=0,r=1;
+int total = 0, r = 1;
     
 scanf("%lf", &control);
 while(control > 1){
-    control=control/2;
-    total+=1;
+    control = control/2;
+    total += 1;
 }    
-for (int i = 1; i != total+1; i+=1)      
-    r=i;
+for (int i = 1; i != total + 1; i += 1)      
+    r = i;
     
 printf("%d ", r);    
 return 0;

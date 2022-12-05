@@ -10,12 +10,12 @@
 
 int main() {
 int control;
-int total=1;
+int total = 1;
     
 scanf("%d", &control);
-while(control > 9){
-    control/=10;
-    total+=1;
+while(control > 9) {
+    control /= 10;
+    total +=1 ;
 }    
 printf("%d", total);    
 return 0;

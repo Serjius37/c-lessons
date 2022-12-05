@@ -38,9 +38,9 @@ int main(void) {
   res = 1;
 
   while(k > 0){
-    if (k%2 == 0){  
-      a = a*a;
-      k = k/2;
+    if (k % 2 == 0){  
+      a = a * a;
+      k = k / 2;
     }else {
       res = res * a;
       k = k - 1;

@@ -18,7 +18,7 @@ int main() {
             continue;
         }
         if (c && a != -9999) {
-            printf("%d ",a);
+            printf("%d ", a);
         }
     }    
     return 0;

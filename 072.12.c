@@ -9,18 +9,18 @@
 #include <stdio.h>
 
 int main() {
-int control,v,r;
-int total=1;
+int control, v, r;
+int total = 1;
     
 scanf("%d", &control);
-v=control;
+v = control;
 while(control > 9){
-    control/=10;
-    total+=1;
+    control /= 10;
+    total += 1;
 } 
-for (int i = 1; i != total; i+=1){    
-    r=v%10;
-    v=v/10;
+for (int i = 1; i != total; i += 1){    
+    r = v % 10;
+    v= v / 10;
     printf("%d", r); 
 }
     printf("%d", v); 

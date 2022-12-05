@@ -14,7 +14,7 @@ int main() {
         scanf ("%d", &a);
         if (a == -9999) break;
         if (a <= c) {
-            f +=1;
+            f += 1;
         }
         c=a;          
     }        

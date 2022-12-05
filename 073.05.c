@@ -11,9 +11,9 @@
 int main() {
     int w, a, c = 0;
     scanf ("%d", &w);
-    for (int k=w; k; k--) {
+    for (int k = w; k; k--) {
         scanf ("%d", &a);
-        if (a == c) continue;{
+        if (a == c) continue; {
             c = a;
             printf("%d ",a);
         }

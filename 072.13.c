@@ -15,7 +15,7 @@ int main()
     double e, c = 1., a = 1.,esp = 1.;
     
     scanf ("%lf", &e);
-    while ((1./a) > e) {
+    while ((1. / a) > e) {
         a *= esp;
         c += 1./a;
         esp += 1;
