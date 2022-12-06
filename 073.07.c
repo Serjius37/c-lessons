@@ -9,22 +9,14 @@
 #include <stdio.h>
 
 int main() {
-    int f = 0, a = -1, c = -32768, w = 1, d = 0;
-    for (; a!= -9999;) {
+    int f = 0, a = -1, c = -32768, d;
+    for (d = 1;a > c; d++, c = a) {
         scanf ("%d", &a);
-        if (a == -9999) break;
-        if (a <= c && w == 1) {
-            f += 1;
-            w = d;
-        }
-        c = a;
-        d += 1;
     }        
-    
-     if (f) {
-        printf ("%d",w + 1);
+     if (a == -9999) {
+        printf ("0\n");
      } else { 
-        printf("0");
-    }    
+        printf("%d\n", d);
+     }    
     return 0;
 }

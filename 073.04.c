@@ -10,7 +10,7 @@ YES -- если последовательность положительная,
 
 int main() {
     int f = 0, a = -1, c = 0;
-    for (; a != -9999;) {
+    for (;;) {
         scanf ("%d", &a);
         if (a == -9999) break;
         c += 1;
@@ -20,9 +20,9 @@ int main() {
     }        
     
      if (f || !c) {
-        printf ("NO");
+        printf ("NO\n");
      } else { 
-        printf("YES");
+        printf("YES\n");
     }    
     return 0;
 }
