@@ -10,8 +10,9 @@
 
 int main() {
     int f = 0, a = -1, c = -32768, d;
-    for (d = 1;a > c; d++, c = a) {
+    for (d = 1;a != -9999; d++, c = a) {
         scanf ("%d", &a);
+        if (a < c) break;
     }        
      if (a == -9999) {
         printf ("0\n");

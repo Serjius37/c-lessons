@@ -10,6 +10,8 @@
 #include <stdio.h>
 
 int main() {
+    int a;
+/*
     int a, c = 0;
     for (; a != -9999;) {
         scanf ("%d", &a);
@@ -20,6 +22,14 @@ int main() {
         if (c && a != -9999) {
             printf("%d ", a);
         }
-    }    
+*/
+    do {
+        scanf("%d", &a);
+    } while (a != 2517);
+    do {
+        scanf("%d", &a);
+        if (a == -9999) break;
+        printf("%d", a);
+    } while (1);
     return 0;
 }
