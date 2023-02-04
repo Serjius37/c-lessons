@@ -9,20 +9,15 @@ YES -- если массив является палиндромом, NO -- в �
 #include <stdio.h>
 
 int main(void){
-    int N, i, y;
-    int f = 0;
+    int N, i, y, f;
     scanf("%d", &N);
     int array[N];
     for (i=0; i < N ; i++){
         scanf("%d", &array[i]);
     }
-    for(y = N - 1; y > - 1; y--, f++){
+    for(y = N - 1, f = 0; f < N /2 ; y--, f++){
         if (array[y] != array[f]) break;
     }
-    if (y == -1) {
-        printf("YES");
-    } else {
-        printf("NO");
-    }      
-      return 0;
+    printf("%s\n", f < N/2 ? "NO":"YES");
+    return 0;
 }

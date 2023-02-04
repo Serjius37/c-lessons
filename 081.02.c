@@ -11,12 +11,12 @@
 int main(void){
     int N, i;
     scanf("%d", &N);
-    int array[N + 1];
+    int array[N];
     for (i=0; i < N; i++){
         scanf("%d", &array[i]);
     }
 
-    for(int i = N- 1; i > - 1; i--){
+    for(int i = N- 1; i >= 0; i--){
         printf("%d ", array[i]);
     }
       return 0;
