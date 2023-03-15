@@ -9,17 +9,14 @@
 #include <stdio.h>
 
 int main() {
-    int a = -1, c = 0, w=0;
-    for (; a != -9999;) {
-        scanf ("%d", &a);
-        if (a == 0) {
-            c += 1;
-            continue;
-        }
-        if (c == 1) {
-            w += a;
-        }
-     }
+    int a, w=0;
+    do {
+        scanf("%d", &a);
+    } while (a != 0);
+    do {
+        scanf("%d", &a);
+        w += a;
+    } while (a != 0);
      printf("%d ",w);
     return 0;
 }

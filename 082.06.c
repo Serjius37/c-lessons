@@ -16,19 +16,17 @@
 #include <stdio.h>
 
 int main(void) {
-  int N;
+  int N,j;
   scanf("%d", &N);
   int arr[N][N];
   int c = 1, k = 1;
 
   for(int i = 0; i < N; i = i + 1){
-    for(int j = 0; j < N; j = j + 1){
-        scanf("%d ",&arr[i][j]);
-        if(i == j)
-            c *= arr[i][j];
-        if((i + j) == (N - 1))
-            k *= arr[i][j];  
-    }
+      for(j = 0; j < N; j = j + 1){
+          scanf("%d ",&arr[i][j]);
+      }    
+      c *= arr[i][i];
+      k *= arr[i][(N-i)- 1];  
   }
   if(c > k)
       printf("%d %d", c ,k);

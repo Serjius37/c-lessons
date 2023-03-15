@@ -9,23 +9,16 @@
 
 int main(void){
     int N, i;
-    int f = 0;
     scanf("%d", &N);
     int array[N + 1];
     for (i = 0; i < N ; i++){
         scanf("%d", &array[i]);
     }
-    for(i=0; i < N ; i++){
-        if (i > (N/2) -1 ) {
-            printf("%d ", array[i]);
-            array[i] = 0;
-        }
-    }
-     for(i = 0; i < N ; i++){
-        if (0 != array[i]) {
-            printf("%d ", array[i]);      
-            
-        }
+    for(i = (N/2); i < N ; i++){
+            printf("%d ", array[i]);           
     } 
+    for(i=0; i < N/2 ; i++){
+        printf("%d ", array[i]);
+    }
       return 0;
 }

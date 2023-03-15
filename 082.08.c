@@ -28,8 +28,16 @@ int main(void) {
             scanf("%d ",&arr[i][j]);
         }
     } 
-    for (int a = 0; a <= N +1; a++){
+    for(int j = 0; j < M; j++){
+        arr1[j] = 0;
+        for (int i = 0; i < N; i++){
+            arr1[j] += arr[i][j];
+        }     
+    } 
+
+    /* for (int a = 0; a <= N +1; a++){
         c = 0;
+   
         for (int i = 0; i < N; i++){
             for(int j = a; j < M; j++){
                 if(j == a){
@@ -39,7 +47,8 @@ int main(void) {
             }    
         arr1[a] = c;
         }    
-    }   
+    }  
+    */ 
     for(int i = M - 1; i > -1; i--){
         printf(" %d", arr1[i]);
     }

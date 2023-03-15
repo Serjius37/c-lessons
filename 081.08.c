@@ -16,23 +16,20 @@ int main(void){
     int array[N + 1];
     for (i=0; i < N ; i++){
         scanf("%d", &array[i]);
-    }
-    for(i=0; i < N ; i++){
         f += array[i];
     }
+
     f /= N;
 
     for(i=0; i < N ; i++){
         if (f < array[i]) {
             printf("%d ", array[i]);
-            array[i] = 0;
         }
     }
 
      for(i=0; i < N ; i++){
-        if (0 != array[i]) {
+        if (f >= array[i]) {
             printf("%d ", array[i]);      
-            
         }
     } 
       return 0;

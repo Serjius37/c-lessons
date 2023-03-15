@@ -27,12 +27,21 @@ int main() {
         for (int j = 0; j < M ; j++){  
             scanf("%d ",&arr[i][j]);
         }
-    }          
-    for (int i = 0; i < M; i++){
+    }     
+    for(int j = 0; j < M; j++){ 
+        for (int i = 0; i < N; i++){
+            printf("%d ", arr[i][j]);
+        }
+        printf("\n");
+    }
+
+
+/*   for (int i = 0; i < M; i++){
         for(int j = 0; j < N; j++){ 
             printf("%d ", arr[j][i]);
         }
         printf("\n");
     }
+*/
   return 0;
 }

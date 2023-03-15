@@ -18,19 +18,19 @@ int main(void) {
   int N;
   scanf("%d", &N);
   int arr[N][N];
-  int k = 1, c = 0;
+  int k = 1;
 
-  for(int i = 0; i < N; i = i + 1){
-      k = i+1;
-      c = 0;
+  for (int i = 0; i < N; i = i + 1){
+      if (i % 2 == 0)
+          k = 1;
+      else
+          k = N;
     for(int j = 0; j < N; j = j + 1){
-        arr[i][j] = k;
-        if(k == 1)
-            c = 1;
-        if (i < 1 || c == 1)
-            k += 1;
-        else if(!c)
-            k -= 1; 
+      arr[i][j] = k;
+      if (i % 2 == 0)
+          k = k + 1;
+      else
+          k -= 1;
     }
   }
 

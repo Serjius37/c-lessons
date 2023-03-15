@@ -16,32 +16,21 @@ n  n-1  n-2 ...  2    1
 
 #include <stdio.h>
 
-int main(void) {
-  int N;
-  scanf("%d", &N);
-  int arr[N][N];
-  int k = 1;
-
-  for (int i = 0; i < N; i = i + 1){
-      if (i % 2 == 0)
-          k = 1;
-      else
-          k = N;
-    for(int j = 0; j < N; j = j + 1){
-      arr[i][j] = k;
-      if (i % 2 == 0)
-          k = k + 1;
-      else
-          k -= 1;
+int main() {
+    int N, M;
+    scanf("%d %d", &N, &M);
+    int arr[N][M];
+    for (int i = 0; i < N ; i++){
+        for (int j = 0; j < M ; j++){  
+            scanf("%d/t",&arr[i][j]);
+        }
     }
-  }
-
-  for (int i = 0; i < N; i = i + 1){
-    for(int j = 0; j < N; j = j + 1){
-      printf("%d ", arr[i][j]);
-    }
+            
+    for (int i = 0; i < N; i++){
+        for(int j = 0; j < M; j++){
+            printf("%d\t ", arr[i][j]);
+        }
     printf("\n");
-  }
-
+    }
   return 0;
 }

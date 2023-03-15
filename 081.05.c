@@ -5,14 +5,14 @@
 Выходные данные:
 Элементы массива, которые меньше его последнего элемента в том порядке, как они встречаются в массиве, через пробел, или же число 0, если таких элементов не существует. 
 */
-
+#include <stdbool.h>
 #include <stdio.h>
 
 int main(void){
     int N, i;
-    int f = 0;
+    bool f = false;
     scanf("%d", &N);
-    int array[N + 1];
+    int array[N];
     for (i=0; i < N ; i++){
         scanf("%d",&array[i]);
     }
@@ -20,7 +20,7 @@ int main(void){
     for(i=0; i < N ; i++){
         if (array[N-1] > array[i] ) {
             printf("%d ", array[i]);
-            f += 1;
+            f = true;
         }
     } 
     if (!f)
