@@ -9,15 +9,16 @@ yes если строка является номером счастливого
 
 #include <stdio.h>
 
-int main() {
+int main()
+{
     int a = 0, b = 0;
-    for(int i = 0; i < 3; i++)
+    for (int i = 0; i < 3; i++)
         a += getchar();
-    for(int i = 0; i < 3; i++)
+    for (int i = 0; i < 3; i++)
         b += getchar();
     if (a == b)
         printf("yes");
-    else    
+    else
         printf("no");
     return 0;
 }

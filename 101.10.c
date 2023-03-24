@@ -3,10 +3,11 @@
 Задача состояла в том, чтобы написать функцию выводящую все делители числа KK, поступившего на вход.
 */
 
-void factors(int k){
-    scanf ("%d",&k);
-    for (int i = 1; i!=k+1; i+=1){
-        if (k%i==0){
+void factors(int k)
+{
+    scanf("%d", &k);
+    for (int i = 1; i != k + 1; i += 1) {
+        if (k % i == 0) {
             printf("%d ", i);
         }
     }

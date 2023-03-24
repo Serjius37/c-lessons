@@ -14,10 +14,10 @@ int main(void){
     for (i = 0; i < N ; i++){
         scanf("%d", &array[i]);
     }
-    for(i = (N/2); i < N ; i++){
-            printf("%d ", array[i]);           
+    for (i = (N/2); i < N ; i++){
+        printf("%d ", array[i]);           
     } 
-    for(i=0; i < N/2 ; i++){
+    for (i=0; i < N/2 ; i++){
         printf("%d ", array[i]);
     }
       return 0;

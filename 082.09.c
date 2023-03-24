@@ -17,42 +17,41 @@ Sample Output:
 
 #include <stdio.h>
 
-int main() {
+int main()
+{
     int N, M, sum, v = 0, w = 0, max = 0, min = 0;
     scanf("%d %d", &N, &M);
     int arr[N][M];
     int arr1[M];
-    for (int i = 0; i < N ; i++){
-        for (int j = 0; j < M ; j++){  
-            scanf("%d",&arr[i][j]);
-        }
-    }
-    for (int j = 0; j < M ; j++){
+    for (int i = 0; i < N; i++) {
         sum = 0;
-        for (int i = 0; i < N ; i++){  
-             sum += arr[i][j];
-        }    
-        arr1[j] = sum;   
-    }  
-          
-    for (int i = 1; i < M ; i++){
+        for (int j = 0; j < M; j++) {
+            scanf("%d", &arr[i][j]);
+            sum += arr[i][j];
+        }
+        arr1[j] = sum;
+    }
+
+    for (int i = 1; i < M; i++) {
         if (arr1[max] > arr1[i])
             max = i;
-        if (arr1[min] < arr1[i]) 
+        if (arr1[min] < arr1[i])
             min = i;
-    }    
-    
-    for (int i = 0; i < N; i++){
-        for(int j = 0; j < M; j++){
-            if(j == min){
-                printf("%d ", arr[i][max]);
-            }else if(j == max){
-                printf("%d ", arr[i][min]);
-            }else {
-                printf("%d ", arr[i][j]);
-            }    
-        }
-    printf("\n");
     }
-  return 0;
+
+    for (int i = 0; i < N; i++) {
+        for (int j = 0; j < M; j++) {
+            if (j == min) {
+                printf("%d ", arr[i][max]);
+            }
+            else if (j == max) {
+                printf("%d ", arr[i][min]);
+            }
+            else {
+                printf("%d ", arr[i][j]);
+            }
+        }
+        printf("\n");
+    }
+    return 0;
 }

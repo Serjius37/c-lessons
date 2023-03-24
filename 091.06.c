@@ -8,14 +8,17 @@ digit -- если это цифра, en -- если это буква латин
 
 #include <stdio.h>
 
-int main() {
+int main()
+{
     char ch;
     scanf("%c", &ch);
-    if(ch <= 57 && ch >= 48){
+    if (ch <= 57 && ch >= 48) {
         printf("digit");
-    }else if(ch <= 90 && ch >= 65 || ch <= 122 && ch >= 97){
+    }
+    else if (ch <= 90 && ch >= 65 || ch <= 122 && ch >= 97) {
         printf("en");
-    }else {
+    }
+    else {
         printf("error");
     }
     return 0;

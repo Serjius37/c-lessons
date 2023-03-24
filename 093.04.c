@@ -4,23 +4,24 @@
 Входные данные:
 Две символьных строки, записанные каждая с новой строки.  Длина строк не более 50 символов.
 Выходные данные:
-yes -- если из указанных слов можно составить цепочку для игры в "Города", no -- в противном случае. 
+yes -- если из указанных слов можно составить цепочку для игры в "Города", no -- в противном случае.
 */
 
 #include <stdio.h>
 #include <string.h>
 #include <ctype.h>
-int main() {
-    int a , b;
-    char str1[50]; 
-    char str2[50];    
+int main()
+{
+    int a, b;
+    char str1[50];
+    char str2[50];
     fgets(str1, 50, stdin);
     fgets(str2, 50, stdin);
     a = strlen(str1);
     b = strlen(str2);
-    if (str1[a-2] == tolower(str2[0]) || tolower(str1[0]) == str2[b-2])
+    if (str1[a - 2] == tolower(str2[0]) || tolower(str1[0]) == str2[b - 2])
         printf("yes");
-    else    
+    else
         printf("no");
     return 0;
 }

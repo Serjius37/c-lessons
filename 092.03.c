@@ -10,16 +10,16 @@
 
 #include <stdio.h>
 #include <string.h>
-int main (void)
-{    
-    int i= 0, c = 0;
+int main(void)
+{
+    int i = 0, c = 0;
     char str[100];
     fgets(str, 100, stdin);
-    for(i = 0; str[i] != '\n' ;i++){
-        if (str[i] == ' ' && str[i+1] != ' ')
+    for (i = 0; str[i] != '\n';i++) {
+        if (str[i] == ' ' && str[i + 1] != ' ')
             c += 1;
-         }
-    if (str[i-1] != ' ')
+    }
+    if (str[i - 1] != ' ')
         c += 1;
     printf("%d", c);
     return 0;

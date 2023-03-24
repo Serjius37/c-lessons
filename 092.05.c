@@ -10,16 +10,16 @@
 #include <stdio.h>
 #include <math.h>
 #include <string.h>
-int main (void)
-{    
-   int i= 0, c = 0, a = 0;
-   char str[100];
-   fgets(str, 100, stdin);
-   c = strlen(str)- 1;
-   for(i = 0;  c > 0 ;i++, c--){
-       if (str[i] == '1')
-           a += pow(2, c -1);  
-   }    
-   printf("%d", a);
-   return 0;
+int main(void)
+{
+    int i = 0, c = 0, a = 0;
+    char str[100];
+    fgets(str, 100, stdin);
+    c = strlen(str) - 1;
+    for (i = 0; c > 0;i++, c--) {
+        if (str[i] == '1')
+            a += pow(2, c - 1);
+    }
+    printf("%d", a);
+    return 0;
 }

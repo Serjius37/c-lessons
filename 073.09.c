@@ -17,6 +17,6 @@ int main() {
         scanf("%d", &a);
         w += a;
     } while (a != 0);
-     printf("%d ",w);
+    printf("%d ", w);
     return 0;
 }

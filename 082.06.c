@@ -10,28 +10,29 @@
 Выходные данные:
 Два целых числа, записанных через пробел. Первым вывести большее из чисел.
 Подсказки:
-Попробуйте решить задачу, не используя вложенные циклы 
+Попробуйте решить задачу, не используя вложенные циклы
 */
 
 #include <stdio.h>
 
-int main(void) {
-  int N,j;
-  scanf("%d", &N);
-  int arr[N][N];
-  int c = 1, k = 1;
+int main(void)
+{
+    int N, j;
+    scanf("%d", &N);
+    int arr[N][N];
+    int c = 1, k = 1;
 
-  for(int i = 0; i < N; i = i + 1){
-      for(j = 0; j < N; j = j + 1){
-          scanf("%d ",&arr[i][j]);
-      }    
-      c *= arr[i][i];
-      k *= arr[i][(N-i)- 1];  
-  }
-  if(c > k)
-      printf("%d %d", c ,k);
-  else
-      printf("%d %d", k ,c);
+    for (int i = 0; i < N; i = i + 1) {
+        for (j = 0; j < N; j = j + 1) {
+            scanf("%d ", &arr[i][j]);
+        }
+        c *= arr[i][i];
+        k *= arr[i][(N - i) - 1];
+    }
+    if (c > k)
+        printf("%d %d", c, k);
+    else
+        printf("%d %d", k, c);
 
-  return 0;
+    return 0;
 }

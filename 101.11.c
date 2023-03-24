@@ -2,17 +2,19 @@
 Переделайте функцию, написанную в прошлом уроке, таким образом, чтобы она возвращала число 1, если число KK простое, или 0, если число KK составное.
 */
 
-int is_prime(int k){
-    int count=0;
-    scanf ("%d",&k);
-    for (int i = 1; i!=k+1; i+=1){
-        if (k%i==0){
-            count+=1;
+int is_prime(int k)
+{
+    int count = 0;
+    scanf("%d", &k);
+    for (int i = 1; i != k + 1; i += 1) {
+        if (k % i == 0) {
+            count += 1;
         }
-    } 
-    if (count==2){
+    }
+    if (count == 2) {
         return 1;
-    } else {
+    }
+    else {
         return 0;
-    } 
+    }
 }

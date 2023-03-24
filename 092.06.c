@@ -9,20 +9,20 @@
 Входные данные:
 Строка символов.
 Выходные данные:
-Исходная строка без лишних пробелов. 
+Исходная строка без лишних пробелов.
 */
 
 
 #include <stdio.h>
-int main (void)
-{    
-   int i= 0, c = 0, a = 0;
-   char str[100];
-   fgets(str, 100, stdin);
-   for(i = 0;  str[i] != '\n' ;i++){
-       if (str[i] == ' ' && (i == 0 || str[i+1] == ' '))
-           continue;
-       printf("%c", str[i]);
-   }    
-   return 0;
+int main(void)
+{
+    int i = 0, c = 0, a = 0;
+    char str[100];
+    fgets(str, 100, stdin);
+    for (i = 0; str[i] != '\n';i++) {
+        if (str[i] == ' ' && (i == 0 || str[i + 1] == ' '))
+            continue;
+        printf("%c", str[i]);
+    }
+    return 0;
 }

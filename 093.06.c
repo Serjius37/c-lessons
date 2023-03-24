@@ -4,21 +4,22 @@
 Входные данные:
 Две символьных строки, записанные каждая с новой строки. Длина строк не более 50 символов.
 Выходные данные:
-yes если строки полностью совпадают, no в противном случае. 
+yes если строки полностью совпадают, no в противном случае.
 */
 
 #include <stdio.h>
 #include <string.h>
-int main() {
+int main()
+{
     char str1[50];
     char str2[50];
     int r = 0;
     fgets(str1, 50, stdin);
     fgets(str2, 50, stdin);
-    r = strcasecmp(str1,str2);
+    r = strcasecmp(str1, str2);
     if (r == 0)
         printf("yes");
-    else    
+    else
         printf("no");
     return 0;
 }
