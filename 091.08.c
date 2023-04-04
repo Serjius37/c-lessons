@@ -11,8 +11,8 @@ KK последних символов латинского алфавита.
 int main()
 {
     char ch;
-    scanf("%d", &ch);
-    while (91 - ch <= 90) {
+    scanf("%c", &ch);
+    while (91 - ch <= 'Z') {
         printf("%c", 91 - ch);
         ch -= 1;
     }

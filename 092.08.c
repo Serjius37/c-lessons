@@ -18,16 +18,11 @@ int main(void)
     scanf("%d", &a);
     for (int i = 0; i < a; i++) {
         scanf("%s %d", &str, &step);
-        if (str[0] == 'W') {
-            x -= step;
-        }
-        else if (str[0] == 'S')
-            y -= step;
-        else if (str[0] == 'N') {
-            y += step;
-        }
-        else if (str[0] == 'E') {
-            x += step;
+        switch (str[0]) {
+            case 'N': y += step; break;
+            case 'E': x += step; break;
+            case 'W': x -= step; break;
+            case 'S': y -= step; break;
         }
     }
     printf("%d %d", x, y);

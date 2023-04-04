@@ -16,7 +16,7 @@ int main(void)
     scanf("%c ", &f);
     char str[100];
     fgets(str, 100, stdin);
-    for (i = 0; str[i] != '\n';i++) {
+    for (i = 0; str[i] != '\0';i++) {
         if (str[i] == f) {
             c = i;
             break;

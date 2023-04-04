@@ -16,12 +16,14 @@
 #include <stdio.h>
 int main(void)
 {
-    int i = 0, c = 0, a = 0;
+    int i = 0;
     char str[100];
     fgets(str, 100, stdin);
-    for (i = 0; str[i] != '\n';i++) {
-        if (str[i] == ' ' && (i == 0 || str[i + 1] == ' '))
+    for (; str[i] == ' ';i++);
+    for (;str[i] != '\n';i++) {
+        if (str[i] == ' ' && (str[i + 1] == ' ' || str[i + 1] == '\n' ) ){
             continue;
+        } 
         printf("%c", str[i]);
     }
     return 0;

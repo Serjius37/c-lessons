@@ -16,9 +16,8 @@ int main(void)
     int i = 0;
     char str[100];
     fgets(str, 100, stdin);
-    for (i = 0; str[i] != '\0'; i++)
-
-        printf("%d", i);
+    for (i = 0; str[i] != '\0'; i++){}
+    printf("%d", i);
     return 0;
 }
 

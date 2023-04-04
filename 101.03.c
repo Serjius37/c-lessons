@@ -11,9 +11,5 @@
 
 int min(int a, int b)
 {
-    int min = b;
-    if (a < b)
-        min = a;
-
-    return min;
+    return  a < b ? a : b;
 }

@@ -15,37 +15,31 @@ int main()
     int arr[N][M];
 
 
-    for (int i = 0; i < N; i = i + 1) {
-        for (int j = 0; j < M; j = j + 1) {
+    for (int i = 0; i < N; i++) {
+        for (int j = 0; j < M; j++) {
             arr[i][j] = 0;
         }
     }
     for (a = 0; a < M / 2; a++) {
         for (int j = a; j < M - a && k <= M * N; j++) {
-            arr[a][j] = k;
-            k = k + 1;
+            arr[a][j] = k++;
         }
         for (int i = a + 1; i < N - a && k <= M * N; i++) {
-            arr[i][M - a - 1] = k;
-            k = k + 1;
+            arr[i][M - a - 1] = k++;
         }
         for (int i = (M - a) - 2; i >= 0 + a && k <= M * N; i--) {
-            arr[N - a - 1][i] = k;
-            k = k + 1;
+            arr[N - a - 1][i] = k++;
         }
         for (int i = (N - a) - 2; i > 0 + a && k <= M * N; i--) {
-            arr[i][a] = k;
-            k = k + 1;
+            arr[i][a] = k++;
         }
     }
     if (N % 2 == 1 && N > 3 || M == 1 || N == 1)
         for (int j = a; j < M - a && k <= M * N; j++) {
-            arr[a][j] = k;
-            k = k + 1;
+            arr[a][j] = k++;
         }
     for (int i = a + 1; i < N - a && k <= M * N; i++) {
-        arr[i][M - a - 1] = k;
-        k = k + 1;
+        arr[i][M - a - 1] = k++;
     }
 
     for (int i = 0; i < N; i++) {
