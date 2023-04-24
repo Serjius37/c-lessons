@@ -9,10 +9,9 @@
 
 int main(void)
 {
-    int m, k;
+    int k;
     scanf("%d", &k);
-    m = factorial(k);
-    printf("%d", m);
+    printf("%d", factorial(k));
     return 0;
 }
 int factorial(int k)

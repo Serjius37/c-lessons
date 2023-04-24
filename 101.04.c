@@ -8,16 +8,17 @@
 */
 
 #include<stdio.h>
-int min(int a, int b, int c)
-{
-    int min = b;
-    if (a < b)
-        min = a;
-    if (c < min)
-        min = c;
 
-    return min;
+int min(int a, int b)
+{
+    return a < b ? a : b;
 }
+
+int min3(int a, int b, int c)
+{
+    return min(a, min(b, c));
+}
+
 int main(void)
 {
     int x = 0, y = 0, z = 0;

@@ -11,7 +11,7 @@ kk -- первое число последовательности трёх на
 int sequence_multipliers(int w)
 {
     int k = 1, d = -1;
-    while (k <= 9) {
+    while (k <= 99) {
         if ((k * (k + 1) * (k + 2) == w)) {
             return k;
             break;
