@@ -5,9 +5,8 @@
  буква x при сдвиге 4 будет заменена на букву b, т.к. мы считаем алфавит зацикленным.
 */
 
-void char_cesar(char * ch, int shift){        
+void char_cesar(char* ch, int shift)
+{
     *ch += shift;
-    if(*ch > 'z' ){
-        *ch -= 26;
-    }    
+    *ch=*ch > 122 ? *ch - 26 : *ch;
 }

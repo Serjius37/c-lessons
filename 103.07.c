@@ -1,14 +1,23 @@
-/*Написать функцию int gcd(int x, int y), 
+/*Написать функцию int gcd(int x, int y),
 которая ищет наибольший общий делитель для чисел x и y.
 */
 
-int gcd(int x, int y){
-while (x !=0 && y != 0){ 
-    if (x >= y){      
-        x=x% y; 
-    }else {
-        y =y% x;
-    }  
-}    
-return  y+x ; 
+int gcd(int x, int y)
+{
+    while (x != 0 && y != 0) {
+        if (x >= y) {
+            x = x % y;
+        }
+        else {
+            y = y % x;
+        }
+    }
+    return  y + x;
+    while (y) {
+        if (x >= y) {
+            int a = x; x = y; y = a;
+        }
+        y = y % x;
+    }
+    return  x;
 }
