@@ -8,5 +8,5 @@
 void char_cesar(char* ch, int shift)
 {
     *ch += shift;
-    *ch=*ch > 122 ? *ch - 26 : *ch;
+    *ch=*ch > 122 ? *ch - 26 : *ch; 
 }
